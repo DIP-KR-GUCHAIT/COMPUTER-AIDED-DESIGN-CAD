@@ -1,0 +1,435 @@
+﻿Z '_Zoom
+ZE '_Zoom _Extents
+ZEA '_Zoom _All _Extents
+ZS '_Zoom _Selected
+ZSA '_Zoom _All _Selected
+S '_OrientOnSrf
+o '_offset
+P '_noecho '_CPlane _Origin _Object
+M '_Move
+U _UndoMultiple
+POn '_PointsOn
+POff '_PointsOff
+c '_copy
+W ! _NoEcho
+COn '_CurvatureGraph
+COff '_CurvatureGraphOff
+PlugInManager ! _OptionsPage _PlugIns
+AdvancedDisplay ! _OptionsPage _AdvancedSettings
+DisplayAttrsMgr ! _OptionsPage _AdvancedSettings
+NewAlias _ChangeLayer
+cc '_SelCrv
+D COPY _PAUSE I
+ss '_SelSrf
+ï»¿SS2 ! _NoEcho  _SetRedrawOff  _SA4a  _ShadedColor=_Constant  _Color=250,245,228 _Enter -_RenderDisplaySettings  _ColorBackfaces=_Yes  _ShowWiresInShadedMode=_Yes _GhostLockedObjects=_Yes _BackfaceColor=225,240,250  _Enter  SA4b _WireColor=_ObjectColor _Enter _SetRedrawOn
+SS3 ! _NoEcho _SetRedrawOff _SA4a  _ShadedColor=_ObjectColor _Enter -_RenderDisplaySettings  _ColorBackfaces=_No _ShowWiresInShadedMode=_No _GhostLockedObjects=_No _Enter _SA4b  _WireColor=_ObjectColor  _Enter _SetRedrawOn
+SS4 ! _NoEcho _SetRedrawOff _SA4a _ShadedColor=_ObjectColor _Enter -_RenderDisplaySettings  _ColorBackfaces=_No _ShowWiresInShadedMode=_Yes _GhostLockedObjects=_Yes _Enter _SA4b  _WireColor=_ObjectColor  _Enter _SetRedrawOn
+SS5 ! _NoEcho  _SetRedrawOff _SA4a  _ShadedColor=_Constant  _Color=192,210,192 _Enter -_RenderDisplaySettings  _ColorBackfaces=_Yes  _BackfaceColor=221,192,203 _ShowWiresInShadedMode=_No _Enter  SA4b _WireColor=_ObjectColor _Enter -Options Display _Transparency=80 _Enter _Enter _Enter _SetRedrawOn
+SS6 ! _NoEcho _SetRedrawOff  _SA4a  _ShadedColor=_Constant  _Color=106,83,255 _Enter -_RenderDisplaySettings  _ColorBackfaces=_Yes  _BackfaceColor=225,0,4 _ShowWiresInShadedMode=_Yes _Enter  _SA4b _WireColor=_ObjectColor _Enter _SetRedrawOn
+uls '_UnlockSelected
+mz '_move PAUSE noecho w0,0,0 w0,0,0.1
+mzu move w0,0,0 w0,0,-.05 _pause
+my '_move PAUSE noecho w0,0 w0,0.05
+myu move w0,0,0 w0,-.05,0  _pause
+mx '_Move PAUSE noecho w0,0 w0.05,0
+mxu move w0,0,0 w-.05,0,0  _pause
+MXY '_Move PAUSE noecho w0,0 w0.05,0.05
+mxyu move w0,0,0 w.05,.05,0 _pause
+re '_revolve
+um ! _UndoMultiple
+rm ! _RedoMultiple
+epo ! _PointsOff
+EP '_EditPtOn
+cco -properties _pause _o _c _o
+rv '_RenderedViewport
+DM '_DRAGMODE
+ll noecho -Layer _v _t !
+COBL -properties _pause _O _COLOR LAYER ENTER ENTER
+IC ! _InterpCrv
+b '_BooleanDifference
+WI WIRECUT
+tp _TestCPCP
+y EXTRACTISOCURVE _Pause _pause _pause _pause length
+ED _ExtendSrf
+bs '_BlendSrf
+RZ _NOECHO _ROTATE3D _PAUSE W0,0,0 W1,0,0 90
+RZU ROTATE3D 0,0,0 0,0,5 -1
+RZ1 _NOECHO _ROTATE3D _PAUSE W0,0,0 W1,0,0 1
+RY1 _NOECHO _ROTATE3D _PAUSE W0,0,0 W0,1,0 1
+EXC _Extend
+EXO EXPORT
+se '_Section
+mo ! -_RunScript ( offset_multiple 1 )
+we -Runscript (Weight_Estimation)
+fp 4view _SetActiveViewport perspective -ViewportProperties  _Size _enter 627 _enter _SetActiveViewport Top -ViewportProperties _Size _enter 627 _enter _SetActiveViewport Right _closeviewport _SetActiveViewport Front _closeviewport '_SetView _World _front
+ca '_cap
+FF FLIP
+HIA ! _-Hide _Pause "A" _Enter
+UHA ! _-Show "A"
+HIB ! _-Hide _Pause "B" _Enter
+UHB ! _-Show "B"
+HID ! _-Hide _Pause "C" _Enter
+UHD ! _-Show "C"
+ESA EXTRACTSRF
+MEC Meancurve
+dfb '_DupFaceBorder
+ECOS _ExtendCrvOnSrf
+ebs '_ExtractBadSrf
+li '_line
+SWB '_SetView _World _Bottom
+SVB '_SetView _World _BACK
+SVL '_SetView _World _LEFT
+svp '_SetView _world _plan _enter
+SSV '_CPlane _Surface
+ics '_InterpCrvOnSrf
+REC ! _Rectangle
+ln _line _normal
+mcy '_move noecho 0,0 0,0.05
+mcyu move 0,0,0 0,-.1,0 !
+mcx '_Move noecho 0,0 0.05,0
+mcxu move 0,0,0 -.1,0,0 !
+ar ! _Arc _StartPoint
+ar3 ! _Arc _StartPoint  _Pause _Pause _Direction
+sop _noecho _circle _echo _a _pause _pause _noecho _D 0.01 _sellast _PlanarSrf delete _sellast p delete pt 0
+uo ! _UndoSelected
+tt _SelPt
+bu '_BooleanUnion
+bi '_BooleanIntersection
+ii '_insert
+g '_group
+car '_ArrayPolar
+rar '_array
+V '_cplane _origin _view
+SOS '_SelopenSrf
+sps '_SelPolySrf
+sops '_SelopenPolySrf
+sbnn '_SelBlockInstancenamed _pause sbn
+3d '_noecho '_SetView _world _perspective
+pj '_project
+spl '_InterpCrv
+SH '_ShadedViewport
+cs '_CSec
+exs '_ExtendSrf
+sco '_SelColor
+l '_lock
+me '_MoveEdge
+ul '_unlock
+dbo '_DupBorder
+h '_Hide
+dii '_DimAligned
+2D '_noecho '_Make2D
+uh '_Show
+DE '_DupEdge
+e '_extend
+WF '_WireframeViewport
+bb '_BoundingBox _pause _enter _enter
+4s '_EdgeSrf
+t '_trim
+rr '_RailRevolve
+ex '_Explode
+3s '_NetworkSrf
+ext '_Extend
+pa '_Patch
+sed '_ScaleEdge _s _1
+s2 '_scale2d
+PLI '_Polyline
+x _Zoom _All _Extents
+ea '_ShowEdges
+ih '_invert _hide
+dw '_ExtractIsoCurve
+r '_Rotate
+wl '_SetView _world _left
+ee '_extrude _c
+wbo '_SetView _world _bottom
+SC '_SelCrv
+wba '_SetView _world _back
+DX DupEdge
+svd _CPlane _world _top
+c2v '_Crv2View
+wr '_SetView _world _right
+ug '_ungroup
+wt '_SetView _world _top
+cp '_CutPlane
+wp '_SetView _world _perspective
+il '_invert _lock
+dd '_DimDiameter
+f '_ProjectToCPlane
+ol '_OneLayerOn
+rh '_RoundHole
+al ! _-Layer _On * _Enter
+or OrientOnSrf
+n -notes _t !
+Os offsetsrf
+di '_Dim
+mh '_MakeHole
+ut '_Untrim
+rp '_RemapCPlane _copy
+sba '_SelBadObjects
+rd roundhole
+PT '_Point
+mi '_mirror
+ipt '_InsertEditPoint
+ch chain
+ecc '_ExtractSubCrv
+lip '_Line _Perpendicular _2Curves
+sse _ScaleEdge
+ocs OffsetCrvOnSrf pause pause pause
+mm '_mesh
+on ! _OffsetNormal
+pl '_plane
+s1 '_scale1d
+CG '_CurvatureGraph
+ps '_PlanarSrf
+CGG '_CurvatureGraphOff
+ES '_ExtractSrf
+sec '_Selchain
+s3 '_scale
+opg '_DocumentPropertiesPage _g
+pp '_CPlane _world _top
+ZA '_Zoom _All _Extents
+ls '_lockswap
+sa '_selall
+US ! _UnlockSelected
+sll '_sellayer
+rg '_RemoveFromGroup
+fe filletedge
+cit _circle _t
+cv '_CopyToClipboard  _paste
+PC _ProjectToCPlane
+tx '_TextObject
+1s '_noecho '_sweep1
+lii '_polyline
+2s '_sweep2
+pb '_BackgroundBitmap _pause
+r3 '_Rotate3D
+is '_IncrementalSave
+sw _ShowWiresInShadedMode=_yes
+sch1 ! _NoEcho  _SetRedrawOff _SA4a  _ShadedColor=_Constant  _Color=221,192,203 _Enter -_RenderDisplaySettings  _ColorBackfaces=_Yes  _BackfaceColor=192,210,192 _ShowWiresInShadedMode=_No _Enter  SA4b _WireColor=_ObjectColor _Enter -Options Display _Transparency=80 _Enter _Enter _Enter _SetRedrawOn
+sv ! _ShadedViewport
+4v '_4View
+wv ! _WireframeViewport
+3v '_3View
+sp '_SelPt
+OFS '_OffsetSrf
+hs '_HideSwap
+mf '_MoveFace
+uhs '_ShowSelected
+maf '_MergeAllFaces
+LP ! _Line _Perpendicular
+cvv _closeviewport
+sn -SelName
+q '_savesmall
+SNO '_ShowEdgesOFF
+A '_arc _StartPoint
+le '_Length
+sch2 _SetRedrawOff _SA4a  _ShadedColor=_Constant  _Color=250,245,228 _Enter -_RenderDisplaySettings  _ColorBackfaces=_Yes  _ShowWiresInShadedMode=_No _GhostLockedObjects=_Yes _BackfaceColor=225,240,250  _Enter  _SA4b _WireColor=_ObjectColor _Enter _SetRedrawOn
+AP ! _ArrayPolar
+2q _noecho '_mirror 0,0 1,0 _SelNone _SelLast '_mirror 0,0 0,1 _delete
+SO '_CPlane _Object
+3q '_noecho '_mirror 0,0 1,0 _SelNone _SelLast '_mirror 0,0 0,1
+4q '_noecho '_mirror 0,0 1,0 _SelNone _SelLast '_mirror 0,0 0,1 _SelNone _SelLast '_mirror 0,0 1,0 _SelNone
+qs offsetsrf
+3qq '_noecho '_mirror 0,0 0,1 _SelNone _SelLast '_mirror 0,0 1,0 _SelNone _SelLast
+cl '_ChangeLayer
+mrs '_MergeSrf
+bc -BLENDCRV Continuity_1=G1 Continuity_2=G1
+vt '_ViewportTabs _t
+bm '_BlockManager
+rgg '_RemoveFromGroup _selprev
+db DupBorder
+VC '_SelNone  _Paste _ChangeToCurrentLayer
+pr '_-Layout _New 4
+ecac '_ExtrudeCrvAlongCrv _Pause  _Cap=_yes _SubCurve=_No
+CHL ChangeLayer
+ecasc '_ExtrudeCrvAlongCrv _Pause _Cap=_yes _SubCurve=_Yes
+fac '_arraycrv
+ecp '_ExtrudeCrvToPoint _Pause _Cap=_yes
+ec '_Extend _Enter  _Type=Arc  _Pause _Enter _Pause
+ect '_ExtrudeCrvTapered _Pause _Cap=_yes
+cb '_CurveBoolean _D=No
+ess '_ExtrudeSrf _Pause  _Cap=_Yes
+ce '_CrvEnd
+esp '_ExtrudeSrfToPoint _Pause   _Cap=_Yes
+ST ! -_RunScript ( selecciona_per_tipus 1 )
+est '_ExtrudeSrfTapered _Pause   _Cap=_Yes
+soc selopencrv
+esac '_ExtrudeSrfAlongCrv _Pause SubCurve=_No  _Cap=_Yes
+ESSC '_ExtrudeSrfAlongCrv _Pause SubCurve=_Yes _Cap=_Yes
+sm '_selmesh
+mb '_MeshBooleanUnion
+hm ! Mirror 0,0 1,0
+mbd '_MeshBooleandifference
+vm '_Mirror 0,0 0,1
+mbi '_MeshBooleanintersection
+mme '_MatchMeshEdge
+2g _rotate 0,0 copy 180 !
+haa '_Hatch
+mcz '_move noecho 0,0,0 0,0,0.05
+uu '_RedoMultiple
+RY _NOECHO _ROTATE3D _PAUSE W0,0,0 W0,1,0 90
+mpp '_ExtractMidPlane
+ryu _rotate3d 0,0 -1,-0 .5
+in '_intersect
+RX _NOECHO _ROTATE3D _PAUSE W0,0,0 W0,0,1 90
+ree '_RotateEdge
+rxu _rotate3d 0,0 0,1 .5
+rf '_RotateFace
+aG ! _AddToGroup
+qq noecho '-calc t enter
+gs -DocumentProperties _g _m _pause _s _pause _enter _enter
+oo '_osnap
+je '_JoinEdge
+SPE _SplitEdge
+lo '_Loft
+i '_invert
+mczu move  0,0  -0,-0,-.1 !
+j '_Join
+dc _divide
+MC Match
+ooe '_osnap _o _e _enter
+oon '_osnap _o _n _enter
+oop '_osnap _o _p _enter
+oom '_osnap _o _m _enter
+ooc '_osnap _o _c _enter
+ooi '_osnap _o _i _enter
+go '_noecho '_SelAll '_Cut '_sellayer '_selnone _echo '_changelayer _pause '_onelayeroff _pause _noecho '_paste '_selnone
+op '_ProjectOsnap _Toggle
+cll '_CopyToLayer
+ooo '_osnap _o _enter
+dcl _Divide _enter _l
+ph '_PlaceHole
+ecs '_ExtrudeCrv _Pause
+reh '_RevolvedHole
+ltp ! _Line _Tangent _Pause
+bo _Boss
+scps '_SelClosedPolysrf
+lipc '_Line _Perpendicular
+scs SelClosedSrf
+lis lines
+ri '_Rib
+ac _AreaCentroid
+ms '_MoveSide
+wc '_WireCut
+ooq '_osnap _o _q _enter
+b2 _Boolean2Objects
+sbo SelBadObjects
+mxx '_Move PAUSE noecho w0,0 w-0.05,0
+sb '_SelBlockInstance
+myy '_move PAUSE noecho w0,0 w0,-0.05
+ci '_circle
+mzz '_move PAUSE noecho w0,0,0 w0,0,-0.1
+civ _circle _v
+opp '_Options
+ci3 _circle _3
+edc '_SoftEditCrv
+ci2 _circle _2
+eds '_SoftEditSrf
+acs '_ArrayCrvOnSrf
+pbp '_BackgroundBitmap _place
+aac ArrayCrv
+pbv '_BackgroundBitmap _v _enter
+uvc _CreateUVCrv
+oor '_osnap _o _r _enter
+RX1 _NOECHO _ROTATE3D _PAUSE W0,0,0 W0,0,1 1
+mrf '_mergeface
+po '-_Properties _v _t _enter
+pbs '_BackgroundBitmap _s
+sic -Properties _o _S _y _enter !
+pbm '_BackgroundBitmap _m
+hic -Properties _o _S _n _enter !
+be _VariableBlendEdge
+rc '_Rebuild
+vfe '_VariableFilletEdge
+sbn '_SelBlockInstancenamed
+vce _VariableChamferEdge
+aacs _ArrayCrvOnSrf
+ofss '_OffsetSrf _s
+sl '_Split
+MYX '_Move PAUSE noecho w0,0 w-0.05,-0.05
+dcs _Divide _enter
+te _Taper
+vofs '_VariableOffsetSrf
+dp '_CPlane _World _Top
+ept _EditPtOn
+SS1 ! _SetRedrawOff _SA4a  _ShadedColor=_Constant  _Color=250,245,228 _Enter -_RenderDisplaySettings  _ColorBackfaces=_Yes  _ShowWiresInShadedMode=_No _GhostLockedObjects=_Yes _BackfaceColor=225,240,250  _Enter  _SA4b _WireColor=_ObjectColor _Enter _SetRedrawOn
+excs '_ExtendCrvOnSrf
+exse '_ExtendSrfEdge
+exx '_Extend
+oonr '_osnap _o _n _r _enter
+cos '_InterpCrvOnSrf
+ooer '_osnap _o _e _r _enter
+scha ! _NoEcho _SetRedrawOff _SA4a  _ShadedColor=_Constant  _Color=250,245,228 _Enter -_RenderDisplaySettings  _ColorBackfaces=_Yes  _ShowWiresInShadedMode=_No _GhostLockedObjects=_Yes _BackfaceColor=225,240,250  _Enter  _SA4b _WireColor=_ObjectColor _Enter _SetRedrawOn
+schb ! _NoEcho  _SetRedrawOff  _SA4a  _ShadedColor=_Constant  _Color=250,245,228 _Enter -_RenderDisplaySettings  _ColorBackfaces=_Yes  _ShowWiresInShadedMode=_Yes _GhostLockedObjects=_Yes _BackfaceColor=225,240,250  _Enter  SA4b _WireColor=_ObjectColor _Enter _SetRedrawOn
+schc ! _NoEcho _SetRedrawOff _SA4a  _ShadedColor=_ObjectColor _Enter -_RenderDisplaySettings  _ColorBackfaces=_No _ShowWiresInShadedMode=_No _GhostLockedObjects=_No _Enter _SA4b  _WireColor=_ObjectColor  _Enter _SetRedrawOn
+schd ! _NoEcho _SetRedrawOff _SA4a _ShadedColor=_ObjectColor _Enter -_RenderDisplaySettings  _ColorBackfaces=_No _ShowWiresInShadedMode=_Yes _GhostLockedObjects=_Yes _Enter _SA4b  _WireColor=_ObjectColor  _Enter _SetRedrawOn
+sche ! _NoEcho  _SetRedrawOff _SA4a  _ShadedColor=_Constant  _Color=192,210,192 _Enter -_RenderDisplaySettings  _ColorBackfaces=_Yes  _BackfaceColor=221,192,203 _ShowWiresInShadedMode=_No _Enter  SA4b _WireColor=_ObjectColor _Enter -Options Display _Transparency=80 _Enter _Enter _Enter _SetRedrawOn
+schf ! _NoEcho _SetRedrawOff  _SA4a  _ShadedColor=_Constant  _Color=106,83,255 _Enter -_RenderDisplaySettings  _ColorBackfaces=_Yes  _BackfaceColor=225,0,4 _ShowWiresInShadedMode=_Yes _Enter  _SA4b _WireColor=_ObjectColor _Enter _SetRedrawOn
+css '_CrvStart
+cse '_Crvstart _pause _Crvend _pause
+cia '_Circle _a
+mp _mplane
+gr -DocumentProperties _g _m _pause _enter _enter
+gsd -DocumentProperties _g _m 1 _s 1 _enter _enter
+ge -DocumentProperties _g _e _pause _enter _enter
+gee -DocumentProperties _g _e 100 _enter _enter
+fl '_flow
+lie '_line _e
+lib '_line _o
+ro '_rotate 0
+cn -PropertieS _O _N _pause _enter _enter
+ccol '_noecho '-Properties _pause o c l _enter _enter
+prr '_ViewportTabs _t
+emo '_EMapOff
+em '_EMap
+esc '_ExtractSrf _copy
+fs _filletsrf
+clc '_ChangeToCurrentLayer
+voo '_VolumeCentroid
+sww _ShowWiresInShadedMode=_No
+vv '_volume pause lock vv
+bg '_sphere
+ca1 '_noecho _DupBorder -patch _enter _delete _selprev _sellast _join _selnone
+lisn '_Line _Normal
+liv '_Line _Vertical
+litp '_Line _Tangent _Pause
+lit '_Line _Tangent _2Curves
+lipp _noecho '_CurveThroughPt  _Degree=1  _CurveType=_Interpolated
+lid '_line _p oom _pause _f _pause _enter
+cp3 '_CPlane _3Point
+opc '_OrientOnCrv _Pause
+cps '_cplane _s
+ofcs '_OffsetNormal
+rcc '_SimplifyCrv
+at '_Arc _Tangent
+acc '_CurvatureGraph
+2v _noecho 4v _SetActiveViewport perspective -ViewportProperties  _Size _enter 627 _enter _SetActiveViewport Top -ViewportProperties _Size _enter 627 _enter _SetActiveViewport Right _closeviewport _SetActiveViewport Front _closeviewport '_SetView _World _Perspective sh
+hp '_HistoryPurge
+poi -Properties _pause _noecho _Object _ShowIsocurves _nO _enter _enter
+poii -Properties _pause _noecho _OBJECT _ShowIsocurves _Yes _enter enter
+fas '_FlowAlongSrf
+eaa _showEdgesoff
+lgd _noecho -AdvancedDisplay _lockedObjects _drawghosted=yes _T _echo _pause _enter _enter
+ma '_match
+ooem '_osnap _o _e _m _enter
+ooir '_osnap _o _i _r _enter
+ooa '_osnap _o _i _r _e _n _k _m _p _c _q _t _enter
+ook '_osnap _o _k _enter
+oot '_osnap _o _t _enter
+oopm '_osnap _o _p _m_enter
+hab '_Hatch _Boundary
+dr '_DimRadius
+da '_DimAngle
+do '_DimOrdinate
+co '_Contour
+mocs _NoEcho -_RunScript (Muloffcrvonsrf)
+gco _noecho _SELNONE  _echo _select _pause _noecho -Properties _O _N Base _enter _enter _copytoclipboard _lockswap _paste _selnone _echo ocs _pause _pause sn base _noecho _sellast ocs sn base _enter sn base _enter _delete _sellast _lock _lockswap
+rgco _noecho _sellast ocs sn base _enter
+vrgco _noecho _sellast ocs sn base _echo _pause _noecho _selnone
+Alb _noecho -Align _B
+All _noecho -Align _L
+Alr _noecho -Align _R
+alv _noecho -Align _V
+alh _noecho -Align _H
+alt _noecho -Align _t
+OFN '_OffsetNormal
+uva _ApplyCrv
